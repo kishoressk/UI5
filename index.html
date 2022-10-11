@@ -1,0 +1,32 @@
+<html>
+    <head>
+
+    <script id="sap-ui-bootstrap" 
+     type="text/javascript"
+     SRC="https://sapui5.hana.ondemand.com/resources/sap-ui-core.js"
+     
+     data-sap-ui-theme="sap_fiori_3_dark"
+     data-sap-ui-libs="sap.m"
+     data-sap-ui-compatVersion="edge"
+     data-sap-ui-resourceroots='{
+         "chip" : "./" }'
+     > </script>
+    <script>
+        //var oInp = new sap.m.Input("idInp");
+        new sap.m.Input("idInp").placeAt("canvas");
+        var oBtn = new sap.m.Button("idBtn",{
+            text: "nokkarayedava",
+            icon: "sap-icon://account",
+            press: function() {
+
+                alert("lolism");
+            } 
+        });
+        oBtn.placeAt("content");
+    </script>  
+    </head>
+    <body class="sapUiBody">
+        <div id="canvas"></div>
+        <div id="content"></div>
+    </body>
+</html>
